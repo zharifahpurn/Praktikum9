@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.1</title>
+
+    <script>
+        function jumlah() {
+            let bilangan_1 = document.getElementById("bilangan1").value;
+            let bilangan_2 = document.getElementById("bilangan2").value;
+            let hasil_var = parseInt(bilangan_1) + parseInt(bilangan_2);
+            let hasil = document.getElementById("hasil");
+            hasil.innerHTML = hasil_var;
+        }
+    </script>
+</head>
+<body>
+    |Penjumlahan|
+    <a href="index2.html">|Luas & Keliling Lingkaran|</a>
+    <a href="index3.html">Menghitung Kurs Rupiah</a> |
+    <a href="index4.html">Biaya Parkir</a> |
+
+    <br>
+    <hr>
+    <br>
+    <fieldset>
+        <hr>
+        <h1>Penjumlahan</h1>
+        Masukkan Angka :
+        <input type="number" id="bilangan1">
+        +
+        <input type="number" id="bilangan2">
+        <button onclick="jumlah()">Hitung Penjumlahan</button>
+        <br>
+        <h2>Hasil : </h2>
+        <span id="hasil"></span>
+        <hr>
+    </fieldset>
+</body>
+</html>
